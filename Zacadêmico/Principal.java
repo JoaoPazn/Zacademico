@@ -16,7 +16,7 @@ public static void main(String[] args) {
     
     Professor prof3 = new Professor("Tobias Raposo","undertaleDeltarune@gmail.com",
     32,"34194171281301981413",3,"Desenvolvimento de Jogos");
-    System.out.println(prof2.getNome());
+    System.out.println(prof3.getNome());
     
     tecAdm adm1 = new tecAdm("Amauri","AmauriLegal@gmail.com",
     30,"cpf.txt12",3,"Mestrado");
