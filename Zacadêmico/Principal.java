@@ -28,7 +28,7 @@ public static void main(String[] args) {
     
     GrupoPesquisas gPesquisas = new GrupoPesquisas("123","Pixel++",
     "Grupo de pesquisa focado no estudo de como jogos são programados em C++","Jogos","Ciência da Computação",prof3);
-
+    System.out.println(gPesquisas.getNome());
 }
 
 }

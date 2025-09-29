@@ -1,7 +1,10 @@
+import java.util.List;
+
 public class Professor extends Usuario {
     private int siape;
     private String areaFormacao;
     private String nivelInstrucao;
+    private List<GrupoPesquisas> GruposPesquisa;
 
     public Professor(String nome, String emailPessoal, int idade, String cpf, int siape, String areaFormacao) {
         super(nome, emailPessoal, idade, cpf);
@@ -32,4 +35,13 @@ public class Professor extends Usuario {
     public void setNivelInstrucao(String nivelInstrucao) {
         this.nivelInstrucao = nivelInstrucao;
     }
+
+    public List<GrupoPesquisas> getGruposPesquisa() {
+        return this.GruposPesquisa;
+    }
+
+    public void setGruposPesquisa(List<GrupoPesquisas> GruposPesquisa) {
+        this.GruposPesquisa = GruposPesquisa;
+    }
+
 }

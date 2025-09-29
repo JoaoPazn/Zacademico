@@ -1,4 +1,6 @@
+import java.util.List;
 import java.util.Date;
+
 
 public class GrupoPesquisas {
     private String identificadorCNPQ;
@@ -7,8 +9,9 @@ public class GrupoPesquisas {
     private String tema;
     private String area;
     private Professor professorLider;
-    private String dataCriacao;
-    private String dataExpiracao;
+    private Date dataCriacao;
+    private Date dataExpiracao;
+    private List<Professor> ProfessoresMembros;
 
     public GrupoPesquisas(String identificadorCNPQ, String nome, String descricao, String tema, String area, Professor professorLider) {
         this.identificadorCNPQ = identificadorCNPQ;
@@ -67,19 +70,27 @@ public class GrupoPesquisas {
         this.professorLider = professorLider;
     }
 
-    public String getDataCriacao() {
+    public Date getDataCriacao() {
         return dataCriacao;
     }
 
-    public void setDataCriacao(String dataCriacao) {
+    public void setDataCriacao(Date dataCriacao) {
         this.dataCriacao = dataCriacao;
     }
 
-    public String getDataExpiracao() {
+    public Date getDataExpiracao() {
         return dataExpiracao;
     }
 
-    public void setDataExpiracao(String dataExpiracao) {
+    public void setDataExpiracao(Date dataExpiracao) {
         this.dataExpiracao = dataExpiracao;
+    }
+
+    public List<Professor> getProfessoresMembros() {
+        return ProfessoresMembros;
+    }
+
+    public void setProfessoresMembros(List<Professor> ProfessoresMembros) {
+        this.ProfessoresMembros = ProfessoresMembros;
     }
 }
